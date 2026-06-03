@@ -1,0 +1,11 @@
+# Node dependencies
+node_modules/
+
+# Next.js build output
+.next/
+
+# PowerPoint source files in project root
+/*.pptx
+
+# Extracted PowerPoint exports
+.pptx_extract/
