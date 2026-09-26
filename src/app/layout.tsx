@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import GsapProvider from "../components/GsapProvider";
-
-const inter = Inter({ subsets: ["latin"], weight: ['400', '700', '900'] });
 
 export const metadata: Metadata = {
-  title: "Emiliano Bana | Digital Journey",
-  description: "Dalla formazione alle esperienze sul campo: competenze tecniche, crescita personale, impatto reale. Portfolio di Emiliano Bana.",
-  icons: {
-    icon: "/favicon.ico", // Assicurati di mettere un file favicon.ico nella cartella public/
-  },
+  title: "Emiliano Bana — IT & Web Developer",
+  description: "Portfolio di Emiliano Bana, studente di Informatica e IT & Web Developer. Progetti, sistemi, reti e sviluppo web.",
+  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   openGraph: {
-    title: "Emiliano Bana | Digital Journey",
-    description: "Sviluppo software, Cybersecurity e Hardware repair.",
+    title: "Emiliano Bana — IT & Web Developer",
+    description: "Progetti web, sistemi e reti. Portfolio personale di Emiliano Bana, studente di Informatica all'Università degli Studi del Molise.",
     type: "website",
+    locale: "it_IT",
+  },
+  twitter: {
+    card: "summary",
+    title: "Emiliano Bana — IT & Web Developer",
+    description: "Progetti web, sistemi e reti. Portfolio personale di Emiliano Bana.",
   },
 };
 
@@ -24,10 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="it" className="bg-black">
-      <body className={`${inter.className} antialiased selection:bg-accent selection:text-black`}>
-        <GsapProvider>{children}</GsapProvider>
-      </body>
+    <html lang="it">
+      <body>{children}</body>
     </html>
   );
 }

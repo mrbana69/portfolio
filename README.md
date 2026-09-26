@@ -1,76 +1,42 @@
-# 💻 Template Portfolio per Sviluppatori
+# Emiliano Bana — Portfolio
 
-Un template moderno, minimale e pronto all'uso per creare un portfolio personale dedicato a sviluppatori, studenti di informatica e professionisti del settore tech. 
+Sito personale di Emiliano Bana, IT & Web Developer e studente di Informatica all'Università degli Studi del Molise. Presenta il suo percorso tra sistemi, reti, sviluppo web e progetti personali.
 
-Questo repository serve come base di partenza per mettere in mostra i propri progetti, competenze e percorsi di studio in modo chiaro e professionale.
+## Stack
 
----
+- Next.js 15 e React
+- TypeScript
+- Tailwind CSS
+- GSAP e ScrollTrigger
+- Lenis
+- Lucide React
 
-## 🚀 Caratteristiche
+## Requisiti
 
-- **Design Minimal**: Focus totale sul codice e sui progetti, senza distrazioni.
-- **Dati Separati**: Modifichi solo i file di configurazione per aggiornare i testi, senza toccare il codice del layout.
-- **Responsive**: Ottimizzato sia per computer che per smartphone.
-- **Pronto al Deployment**: Configurazione semplificata per GitHub Pages, Vercel o Netlify.
+- Node.js 20 o superiore
+- npm
 
----
+## Sviluppo locale
 
-## 🛠️ Stack Tecnologico
+```bash
+npm install
+npm run dev
+```
 
-Il progetto utilizza tecnologie standard del web:
-- **Frontend**: [Inserisci Framework es. React / HTML statico]
-- **Styling**: [Inserisci es. Tailwind CSS / CSS standard]
-- **Gestore Pacchetti**: `npm` / `yarn`
+Apri [http://localhost:3000](http://localhost:3000).
 
----
+## Verifica produzione
 
-## 📦 Installazione e Uso
+```bash
+npm run lint
+npm run build
+npm start
+```
 
-Segui questi comandi nel terminale per avviare il progetto sul tuo computer:
+## Pubblicazione
 
-1. Clona il repository:
-   git clone https://github.com/mrbana69/portfolio.git
+Il progetto può essere distribuito su Vercel collegando il repository e usando `npm run build` come comando di build. Non sono richieste variabili d'ambiente per la pagina portfolio.
 
-2. Entra nella cartella:
-   cd portfolio
+## Contenuti
 
-3. Installa le dipendenze:
-   npm install
-
-4. Avvia in locale:
-   npm run dev
-
-Ora puoi aprire il browser all'indirizzo locale indicato nel terminale (es. http://localhost:3000).
-
----
-
-## 🔧 Personalizzazione
-
-Per inserire i tuoi dati e progetti personali:
-1. Apri la cartella dei dati (es. `src/data/` o il file di configurazione principale).
-2. Sostituisci i testi segnaposto con le tue informazioni:
-   - **Contatti**: Nome, bio e link ai tuoi social (GitHub, LinkedIn).
-   - **Skills**: I linguaggi di programmazione e i tool che conosci.
-   - **Progetti**: Titolo, descrizione e link ai tuoi repository personali.
-   - **Formazione**: Il tuo percorso scolastico o universitario.
-
----
-
-## 🚀 Pubblicazione Online (Deployment)
-
-Puoi mettere online il tuo portfolio gratuitamente in pochi passaggi:
-
-### Con GitHub Pages
-Esegui il comando di pubblicazione se configurato nel package.json:
-npm run deploy
-
-### Con Vercel o Netlify
-1. Collega il tuo account GitHub alla piattaforma scelta.
-2. Importa questo repository.
-3. Imposta il comando di build (`npm run build`) e pubblica.
-
----
-
-## 📄 Licenza
-
-Questo progetto è rilasciato sotto licenza MIT. Puoi usarlo, modificarlo e distribuirlo liberamente per il tuo portfolio personale.
+Le sezioni e i dati principali sono in `src/app/page.tsx`; il menu mobile è in `src/components/SiteNav.tsx`. Le anteprime MUZAK e Preluded usano gli screenshot in `public/images/pagine-siti/` e rimandano ai rispettivi siti live.
