@@ -93,27 +93,27 @@ export default function Home() {
               <div className="hero-scroll"><span>Scorri per conoscere il mio lavoro</span><ArrowDown size={15} aria-hidden="true" /></div>
             </div>
           </div>
-          <div className="hero-bottom page-wrap"><span>VASTO, ITALIA</span><span>STUDENT · BUILDER · TROUBLESHOOTER</span><span>01—06</span></div>
+          <div className="hero-bottom page-wrap"><span>VASTO, ITALIA</span><span>STUDENT · BUILDER · TROUBLESHOOTER</span><span>01 / 06</span></div>
         </section>
 
         <section className="about section-shell" id="chi-sono" aria-labelledby="about-title">
           <div className="page-wrap">
             <SectionHeading number="01" eyebrow="Un po' di contesto" title={<>La tecnologia,<br />senza misteri.</>} titleId="about-title" />
             <div className="about-content" data-reveal>
-              <p className="about-lead">Mi interessano sia le cose che si vedono — le interfacce, i siti — sia tutto quello che c&apos;è dietro perché funzionino.</p>
+              <p className="about-lead">Mi interessano sia le cose visibili (le interfacce, i siti) sia tutto quello che c&apos;è dietro perché funzionino.</p>
               <div className="about-body">
                 <p>Ho un background pratico nell&apos;assistenza, nell&apos;hardware e nella configurazione dei sistemi. Lavoro con Windows, Linux e macOS, mi muovo tra reti e troubleshooting e sviluppo applicazioni web.</p>
                 <p>Oggi studio Informatica all&apos;Università degli Studi del Molise. Fuori dalle lezioni continuo a sperimentare con progetti personali e ad approfondire temi come la cybersecurity, sempre con la curiosità di capire come funzionano davvero le cose.</p>
                 <a className="inline-link" href="#esperienze">Il mio percorso <ArrowRight size={15} aria-hidden="true" /></a>
               </div>
             </div>
-            <div className="about-rule"><span>UN APPROCCIO PRATICO</span><span>01 — 04</span></div>
+            <div className="about-rule"><span>UN APPROCCIO PRATICO</span><span>01 / 04</span></div>
           </div>
         </section>
 
         <section className="projects section-shell" id="progetti" aria-labelledby="projects-title">
           <div className="page-wrap">
-            <SectionHeading number="02" eyebrow="Lavori scelti" title={<>Dal problema<br />a qualcosa di utile.</>} intro="Tre progetti diversi, un filo comune: provare, risolvere i vincoli e portare le idee sul web." titleId="projects-title" />
+            <SectionHeading number="02" eyebrow="Lavori scelti" title={<>Dal problema<br />a qualcosa di utile.</>} intro="Quattro progetti diversi, un filo comune: provare, risolvere i vincoli e portare le idee sul web." titleId="projects-title" />
             <div className="project-list">
               <article className="project-card" data-reveal>
                 <a className="project-visual project-visual-muzak project-visual-link" href="https://muzakeventi.com" target="_blank" rel="noopener noreferrer" aria-label="Visita il sito di MUZAK Glam Eventi, si apre in una nuova scheda">
@@ -171,6 +171,25 @@ export default function Home() {
                   <ul className="tag-list" aria-label="Tecnologie Offly"><li>iOS</li><li>Web</li><li>Firebase</li></ul>
                 </div>
               </article>
+
+              <article className="project-card project-card-reverse" data-reveal>
+                <a className="project-visual project-visual-interlude project-visual-link" href="https://interlude-five.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Visita Interlude, si apre in una nuova scheda">
+                  <ProjectArtwork variant="interlude" />
+                  <span className="project-visit">Visita il sito <ArrowUpRight size={15} aria-hidden="true" /></span>
+                </a>
+                <div className="project-info">
+                  <div className="project-meta"><span>04</span><span>PROGETTO PERSONALE · MUSICA &amp; REAL-TIME</span></div>
+                  <h3>Interlude <span>DJ Queue &amp; Karaoke</span></h3>
+                  <p className="project-summary">Una web app collaborativa pensata per feste ed eventi: chiunque si collega alla stanza per cercare brani, accodare canzoni in tempo reale e inviare reazioni sincronizzate.</p>
+                  <dl className="project-breakdown">
+                    <div><dt>Idea</dt><dd>Permettere agli invitati di fare i DJ insieme senza appesantire la console principale dell&apos;evento.</dd></div>
+                    <div><dt>Real-time</dt><dd>Sincronizzazione della coda, ricerca YouTube Music e reazioni live condivise tra host TV e smartphone.</dd></div>
+                    <div><dt>Architettura</dt><dd>Next.js 15 App Router con API route resilienti, gestione stato serverless e supporto Fastify Socket.IO.</dd></div>
+                    <div><dt>Risultato</dt><dd>Interfaccia dark OLED fluida, accesso istantaneo via QR Code e zero attriti per gli invitati.</dd></div>
+                  </dl>
+                  <ul className="tag-list" aria-label="Tecnologie Interlude"><li>Next.js 15</li><li>TypeScript</li><li>YouTube Music</li><li>Tailwind CSS</li><li>Vercel</li></ul>
+                </div>
+              </article>
             </div>
           </div>
         </section>
@@ -209,7 +228,7 @@ export default function Home() {
           <div className="page-wrap">
             <SectionHeading number="05" eyebrow="Formazione" title="Le basi, e quello che viene dopo." titleId="education-title" />
             <div className="education-grid">
-              <article className="education-card" data-reveal><span className="education-date">2026 — IN CORSO</span><h3>Laurea Triennale in Informatica</h3><p>Università degli Studi del Molise</p><span className="education-mark" aria-hidden="true">01</span></article>
+              <article className="education-card" data-reveal><span className="education-date">2026 · IN CORSO</span><h3>Laurea Triennale in Informatica</h3><p>Università degli Studi del Molise</p><span className="education-mark" aria-hidden="true">01</span></article>
               <article className="education-card" data-reveal><span className="education-date">COMPLETATO · 2026</span><h3>Diploma di Informatica</h3><p>IIS E. Mattei · Vasto</p><span className="education-mark" aria-hidden="true">02</span></article>
             </div>
             <p className="education-note">Ho seguito anche corsi Cisco di introduzione alla cybersecurity e all&apos;IoT.</p>

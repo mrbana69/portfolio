@@ -13,6 +13,10 @@ const projectScreenshots = {
     src: "/images/offly/Screenshot%202026-09-26%20122628.png",
     alt: "Anteprima della homepage di Offly, progetto No Phone Zone",
   },
+  interlude: {
+    src: "/images/interlude/preview.png",
+    alt: "Anteprima di Interlude, web app collaborativa DJ queue e karaoke",
+  },
 } as const;
 
 export default function ProjectArtwork({ variant }: { variant: keyof typeof projectScreenshots }) {
